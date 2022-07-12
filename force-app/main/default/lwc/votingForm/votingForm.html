@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title = "Voting Form">
+        <lightning-layout vertical-align="stretch">
+            <lightning-layout-item padding="around-small">
+                <lightning-combobox label = "Options"
+                value = {value}
+                placeholder="Select option"
+                options={votingOptions}
+                onchange = {handleChange}>
+            </lightning-combobox>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout >
+            <lightning-layout-item padding="around-small">
+                <lightning-button variant="brand" label="Submit" title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small">
+                </lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+       
+    </lightning-card>
+</template>
